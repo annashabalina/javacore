@@ -1,4 +1,4 @@
-package com.annashabalina.utils.convertors;
+package com.annashabalina.app.utils;
 
 /**
  * Created by Пользователь on 08.10.2016.
