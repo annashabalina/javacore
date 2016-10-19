@@ -16,14 +16,16 @@ public class RightAngledTriangle {
     }
 
 
-    public static double checkIfRightAngled(double a, double b, double c){
+    public static boolean checkIfRightAngled(double a, double b, double c){
 
-        if(c == Math.pow(a, 2) + Math.pow(b, 2)){
+        if((Math.pow(c,2) == Math.pow(a, 2) + Math.pow(b, 2))||
+                (Math.pow(b,2)==Math.pow(a,2)+Math.pow(c,2))||
+                Math.pow(a,2)==Math.pow(b,2)+Math.pow(c,2)){
             System.out.println("Your Triangle is Right Angled");
-            return c;
+            return true;
         } else{
             System.out.println("Your Triangle is not Right Angled");
-            return 0;
+            return false;
         }
     }
 }

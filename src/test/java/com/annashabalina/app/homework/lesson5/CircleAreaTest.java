@@ -10,7 +10,17 @@ import org.junit.Test;
 public class CircleAreaTest {
     @Test
     public void calculateArea(){
-        double expectedResult = 314.00 ;
-        Assert.assertEquals(expectedResult, CircleArea.calculate(10), 0.2);
+        double expRes = 314.00 ;
+        Assert.assertEquals(expRes, CircleArea.calculate(10), 0.2);
+    }
+    @Test
+    public void calculateAreaWithZeroRadius(){
+        double expRes=0;
+        Assert.assertEquals(expRes, CircleArea.calculate(0),0.0);
+    }
+    @Test
+    public  void findBigger(){
+        int expRes = 1;
+        Assert.assertEquals(expRes, CircleArea.calculateBigger(26,10));
     }
 }
