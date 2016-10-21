@@ -8,8 +8,8 @@ public class OddOrEvenNumber {
      public static String checkIfEven(int num){
 
         if(num ==0){
-            System.out.println("0 is neither odd nor even");
-            return "0 is neither odd nor even";
+            System.out.println("0 is even");
+            return "0 is even";
         }
         else if(num%2==0){
             System.out.println("Number is even");

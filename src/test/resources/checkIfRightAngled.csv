@@ -1,0 +1,4 @@
+double a, double b, double c, String expRes
+0,2,3, A side of a triangle can't be equal to 0.
+3,4,5, Your Triangle is Right Angled.
+56,95,88, Your Triangle is not Right Angled.

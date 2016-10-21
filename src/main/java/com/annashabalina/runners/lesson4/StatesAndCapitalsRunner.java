@@ -1,4 +1,4 @@
-package com.annashabalina.runners.lesson4runners;
+package com.annashabalina.runners.lesson4;
 
 import com.annashabalina.app.homework.lesson4.StatesAndCapitals;
 
@@ -12,7 +12,7 @@ public class StatesAndCapitalsRunner {
         StatesAndCapitals myObj = new StatesAndCapitals();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Capital of what state do you want to find?");
-        String state = scanner.next();
+        String state = scanner.nextLine();
         myObj.findCapital(state);
     }
 }

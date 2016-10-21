@@ -1,4 +1,4 @@
-package com.annashabalina.runners.lesson5runners;
+package com.annashabalina.runners.lesson5;
 
 import com.annashabalina.app.classwork.lesson5.CircleArea;
 import com.annashabalina.app.classwork.lesson5.OddOrEvenNumber;

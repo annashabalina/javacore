@@ -10,22 +10,34 @@ import static java.lang.Math.*;
 public class RightAngledTriangle {
 
    public static double calculateC(double a, double b){
-     double cSquare = Math.pow(a,2)+Math.pow(b,2);
-        System.out.println("c square equals to " + cSquare);
-        return cSquare;
+       if(a==0||b==0){
+           System.out.print("A side of a triangle can't be equal to 0.");
+           return 0;
+       } else {
+           double cSquare = Math.pow(a, 2) + Math.pow(b, 2);
+           System.out.println("c square equals to " + cSquare);
+           return cSquare;
+       }
     }
 
 
-    public static boolean checkIfRightAngled(double a, double b, double c){
-
-        if((Math.pow(c,2) == Math.pow(a, 2) + Math.pow(b, 2))||
+    public static String checkIfRightAngled(double a, double b, double c){
+        if(a==0||b==0||c==0){
+           String msg = "A side of a triangle can't be equal to 0.";
+           System.out.println(msg);
+            return msg;
+           // return false;
+        }
+        else if((Math.pow(c,2) == Math.pow(a, 2) + Math.pow(b, 2))||
                 (Math.pow(b,2)==Math.pow(a,2)+Math.pow(c,2))||
                 Math.pow(a,2)==Math.pow(b,2)+Math.pow(c,2)){
-            System.out.println("Your Triangle is Right Angled");
-            return true;
+            String msg ="Your Triangle is Right Angled.";
+            System.out.println(msg);
+            return msg;
         } else{
-            System.out.println("Your Triangle is not Right Angled");
-            return false;
+            String msg = "Your Triangle is not Right Angled.";
+            System.out.println(msg);
+            return msg;
         }
     }
 }

@@ -21,7 +21,7 @@ public class OddOrEvenNumberTest {
 
     @Test
     public void runWithZero(){
-        String expectedResult = "0 is neither odd nor even";
+        String expectedResult = "0 is even";
         Assert.assertEquals(expectedResult, OddOrEvenNumber.checkIfEven(0));
     }
 }

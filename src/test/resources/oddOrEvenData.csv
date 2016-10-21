@@ -1,0 +1,6 @@
+int num, String expRes
+8, Number is even
+697, Number is odd
+0, 0 is even
+-4456, Number is even
+-777, Number is odd

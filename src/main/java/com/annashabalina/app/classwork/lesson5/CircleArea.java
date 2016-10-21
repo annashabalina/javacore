@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class  CircleArea {
     public static double calculate(double radius){
-        double circleArea = Math.PI * Math.pow(radius,2);
+        double circleArea = 3.14159 * Math.pow(radius,2);
         System.out.println("Area is " + circleArea);
         return circleArea;
     }

@@ -22,13 +22,14 @@ public class StatesAndCapitals {
     public String findCapital(String state){
         //String yourCapital = null;
         for(int i=0;i<states.length;i++){
-            if(state==states[i]){
+            if(states[i].equals(state)){
                 yourCapital=capitals[i];
-               // System.out.println("Capital of "+ state +" is " +yourCapital);
-                //return yourCapital;
+              // System.out.println("Capital of "+ state +" is " +yourCapital);
+             //return yourCapital;
             }
         }
         System.out.println("Capital of "+ state +" is " +yourCapital);
         return yourCapital;
     }
 }
+

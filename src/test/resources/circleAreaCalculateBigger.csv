@@ -1,0 +1,6 @@
+double r1, double r2, double expRes
+10,12,2
+16,8,1
+13,-8,1
+17,0,1
+-2.2,2.3,2
