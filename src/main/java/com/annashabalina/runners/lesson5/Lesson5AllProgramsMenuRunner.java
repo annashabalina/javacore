@@ -74,7 +74,7 @@ public class Lesson5AllProgramsMenuRunner {
             double c = s.nextDouble();
             RightAngledTriangle.checkIfRightAngled(a,b,c);
         }else{
-            System.out.println("No such program. Try again with numbers between 1 and 5.");
+            System.exit(0);
         }
     }
 }

@@ -24,7 +24,7 @@ public class StatesAndCapitals {
         for(int i=0;i<states.length;i++){
             if(states[i].equals(state)){
                 yourCapital=capitals[i];
-              // System.out.println("Capital of "+ state +" is " +yourCapital);
+             //System.out.println("Capital of "+ state +" is " +yourCapital);
              //return yourCapital;
             }
         }

@@ -16,10 +16,10 @@ public class Taxes {
         this.month1=month1;
         this.month2=month2;
         this.month3=month3;
+        totalIncome=month1+month2+month3;
     }
 
     public double getIncomes(){
-        totalIncome = month1+month2+month3;
         return totalIncome;
     }
 

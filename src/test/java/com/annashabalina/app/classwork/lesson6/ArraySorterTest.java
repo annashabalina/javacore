@@ -18,8 +18,8 @@ public class ArraySorterTest {
 //Assume that with the same input data each method should have some specific results
 // in practice difference between sorting methods is time, but we will use earthier solution
 
-    private static final String INPUT_DATA = "D:\\projects\\javacore\\src\\test\\java\\com\\annashabalina\\app\\classwork\\lesson6\\input.txt";
-    private static final String EXPECTED_RESULTS = "D:\\projects\\javacore\\src\\test\\java\\com\\annashabalina\\app\\classwork\\lesson6\\expected.txt";
+    private static final String INPUT_DATA = "src/test/resources/input.txt";
+    private static final String EXPECTED_RESULTS = "src/test/resources/expected.txt";
     private static int[] inputData = null;
     private static int[] expectedResults = null;
 
