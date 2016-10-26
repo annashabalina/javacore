@@ -15,22 +15,22 @@ public class RightAngledTriangleTest {
     }
     @Test
     public void CSEqualsASqPlusBSq(){
-        boolean expRes = true;
+        String expRes="Your Triangle is Right Angled.";
         Assert.assertEquals(expRes, RightAngledTriangle.checkIfRightAngled(3,4,5));
     }
     @Test
     public void BSqEqualsASqPlusCSq(){
-        boolean expRes=true;
+        String expRes="Your Triangle is Right Angled.";
         Assert.assertEquals(expRes, RightAngledTriangle.checkIfRightAngled(3,5,4));
     }
     @Test
     public void ASqEqualsBSqPlusCSq(){
-        boolean expRes = true;
+        String expRes="Your Triangle is Right Angled.";
         Assert.assertEquals(expRes, RightAngledTriangle.checkIfRightAngled(5,3,4));
     }
     @Test
     public void checkThatNotRightAngled(){
-        boolean expRes = false;
+        String expRes = "Your Triangle is not Right Angled.";
         Assert.assertEquals(expRes, RightAngledTriangle.checkIfRightAngled(2,3,4));
     }
 }

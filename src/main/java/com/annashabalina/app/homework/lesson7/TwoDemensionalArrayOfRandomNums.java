@@ -9,7 +9,7 @@ public class TwoDemensionalArrayOfRandomNums {
         for(int i =0; i<arr.length;i++){
             for(int y=0; y<arr[i].length;y++){
                 arr[i][y]=10+ (int)(Math.random()*90);
-                System.out.print(arr[i][y] + " ");
+                System.out.print(arr[i][y]);
             }
             System.out.println();
         }
