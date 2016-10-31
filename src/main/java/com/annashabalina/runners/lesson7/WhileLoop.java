@@ -20,7 +20,7 @@ public class WhileLoop {
         while (a > b) {
                 System.out.println("first number is " + a + ", second number is " + b);
                 a--;
-            }
+        }
         System.out.println("first number is " + a+ ", second number is" + b);
         }
     }

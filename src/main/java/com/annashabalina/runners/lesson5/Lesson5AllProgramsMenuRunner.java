@@ -24,10 +24,8 @@ public class Lesson5AllProgramsMenuRunner {
                 }catch(NumberFormatException e){
                     System.out.println("Looks like your input is not a number. Only numbers can be entered. Thanks you!");
                 }
-
             }
         }
-
     }
 
     public static void displayMenu(){
@@ -39,42 +37,40 @@ public class Lesson5AllProgramsMenuRunner {
         System.out.println("5 - Check if your triangle is right-angled");
     }
     public static void selectYourProgram(int num){
-        if(num==1) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter radius: ");
-            double radius = scanner.nextDouble();
-            CircleArea.calculate(radius);
-        }else if(num==2){
-            Scanner s = new Scanner(System.in);
-            System.out.println("Enter first radius");
-            double r1 = s.nextDouble();
 
-            System.out.println("Enter second radius");
-            double r2 = s.nextDouble();
-
-            double area1 = CircleArea.calculate(r1);
-            double area2 = CircleArea.calculate(r2);
-            CircleArea.calculateBigger(area1, area2);
-        } else if(num==3){
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Enter your number:");
-            int a = scanner.nextInt();
-            OddOrEvenNumber.checkIfEven(a);
-        } else if(num==4){
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter sides a and b of triangle: ");
-            double a = scanner.nextDouble();
-            double b = scanner.nextDouble();
-            RightAngledTriangle.calculateC(a,b);
-        } else if(num==5){
-            Scanner s = new Scanner(System.in);
-            System.out.println("Enter sides a, b and c of triangle: ");
-            double a = s.nextDouble();
-            double b = s.nextDouble();
-            double c = s.nextDouble();
-            RightAngledTriangle.checkIfRightAngled(a,b,c);
-        }else{
-            System.exit(0);
+        switch(num){
+            case 1: Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter radius: ");
+                double radius = scanner.nextDouble();
+                CircleArea.calculate(radius); break;
+            case 2: Scanner s = new Scanner(System.in);
+                System.out.println("Enter first radius");
+                double r1 = s.nextDouble();
+                System.out.println("Enter second radius");
+                double r2 = s.nextDouble();
+                double area1 = CircleArea.calculate(r1);
+                double area2 = CircleArea.calculate(r2);
+                CircleArea.calculateBigger(area1, area2);
+                break;
+            case 3:Scanner sc = new Scanner(System.in);
+                System.out.print("Enter your number:");
+                int a = sc.nextInt();
+                OddOrEvenNumber.checkIfEven(a);
+                break;
+            case 4: Scanner scan = new Scanner(System.in);
+                System.out.println("Enter sides a and b of triangle: ");
+                double b = scan.nextDouble();
+                double c = scan.nextDouble();
+                RightAngledTriangle.calculateC(b,c);
+                break;
+            case 5: Scanner s1 = new Scanner(System.in);
+                System.out.println("Enter sides a, b and c of triangle: ");
+                double d = s1.nextDouble();
+                double e = s1.nextDouble();
+                double f = s1.nextDouble();
+                RightAngledTriangle.checkIfRightAngled(d,e,f);
+            default: System.out.println("The program is closing. Goodbye!");
+                System.exit(0);
         }
     }
 }

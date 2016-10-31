@@ -1,6 +1,7 @@
 package com.annashabalina.runners.lesson7;
 
 import com.annashabalina.app.homework.lesson7.*;
+import com.annashabalina.app.homework.lesson9.ArrayPrint;
 
 import java.util.Scanner;
 
@@ -38,22 +39,28 @@ public class LoopsArraysRunner {
     }
 
     public static void runProgram(int num){
-        if(num==1){
-            From2To20Array.printOutArr();
-        } else if(num==2){
-            From1To99.fillOddArray();
-        } else if(num==3){
-            RandomNumbersFrom0To9.createAndPopulate();
-        } else if(num==4){
-            From1To999.createAndPopulate();
-        } else if(num==5){
-            TwoDemensionalArrayOfRandomNums.createAndPopulate();
-        } else if(num==6){
-            ExtraTaskTwoDimensionalArray.createMatrix();
-        }else if(num==7){
-            ExtraTaskSumOfUsersInput.sumUserInput();
-        }else{
-            System.out.println("This value is out of bounds. Try again with one of the values from the menu.");
+
+        switch(num){
+           case 1: int[] myArr = From2To20Array.createEvenNumsArray();
+               ArrayPrint.printArraySpaceSeparated(myArr);
+               ArrayPrint.printArrayColumn(myArr);
+                break;
+            case 2: int[] arr= From1To99.createArray();
+                ArrayPrint.printArraySpaceSeparated(arr);
+                ArrayPrint.printArrayBackwards(arr);
+                break;
+            case 3: RandomNumbersFrom0To9.createAndPopulate();
+                break;
+            case 4: From1To999.createAndPopulate();
+                break;
+            case 5: int[][] twoDimensionalArr = TwoDemensionalArrayOfRandomNums.createAndPopulate(10,99);
+                ArrayPrint.printTwoDimensionalArray(twoDimensionalArr);
+                break;
+            case 6: ExtraTaskTwoDimensionalArray.createMatrix(1,999);
+                break;
+            case 7: ExtraTaskSumOfUsersInput.sumUserInput();
+                break;
+            default: System.out.println("This value is out of bounds. Try again with one of the values from the menu.");
         }
     }
 }

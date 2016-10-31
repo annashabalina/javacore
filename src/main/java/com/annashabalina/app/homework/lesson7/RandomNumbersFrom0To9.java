@@ -1,5 +1,7 @@
 package com.annashabalina.app.homework.lesson7;
 
+import com.annashabalina.app.homework.lesson9.ArrayPrint;
+
 /**
  * Created by Пользователь on 24.10.2016.
  */
@@ -8,13 +10,12 @@ public class RandomNumbersFrom0To9 {
         int[] arr = new int[15];
         int counter = 0;
         for(int i=0;i<arr.length;i++){
-            arr[i]= (int) (Math.random()*9);
-            System.out.print(arr[i] + " ");
+            arr[i]= (int)(Math.random()*9);
             if(arr[i]%2==0){
                 counter++;
             }
         }
-        System.out.println();
+        ArrayPrint.printArraySpaceSeparated(arr);
         System.out.print("There are "+counter+" even numbers");
         System.out.println();
         return arr;

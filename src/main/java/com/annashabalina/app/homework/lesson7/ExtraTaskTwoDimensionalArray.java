@@ -5,17 +5,17 @@ package com.annashabalina.app.homework.lesson7;
  */
 public class ExtraTaskTwoDimensionalArray {
     public static void main(String[] args) {
-        ExtraTaskTwoDimensionalArray.createMatrix();
+        ExtraTaskTwoDimensionalArray.createMatrix(1,999);
     }
 
-    public static void createMatrix() {
+    public static void createMatrix(int start, int finish) {
         int[][] arr = new int[8][5];
         int counter = 1;
         for (int i = 0; i < arr.length; i++) {
             System.out.print("List " + counter + ": ");
             for (int y = 0; y < arr[i].length; y++) {
-                arr[i][y] = (int) (1 + (Math.random() * 999));
-                System.out.printf("%5s", arr[i][y] + " ");
+                arr[i][y] = (int) (start + (Math.random() * (finish-start+1)));
+                System.out.printf("%5s", arr[i][y]);
             }
             counter++;
             System.out.println();
