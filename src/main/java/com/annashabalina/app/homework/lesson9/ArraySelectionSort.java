@@ -9,26 +9,30 @@ public class ArraySelectionSort {
     private static int temp;
     public static int[] fromSmallerToBigger(int[]arr) {
         for (int i = 0; i < arr.length; i++) {
-            for (int y = 0; y < arr.length; y++) {
-                if (arr[i] < arr[y]) {
-                    temp = arr[y];
-                    arr[y] = arr[i];
-                    arr[i] = temp;
+            int indexOfMin = i;
+            for (int y = i+1; y < arr.length; y++) {
+                if (arr[indexOfMin] > arr[y]) {
+                    indexOfMin=y;
                 }
             }
+                temp = arr[indexOfMin];
+                arr[indexOfMin]=arr[i];
+                arr[i]=temp;
         }
         return arr;
     }
 
     public static int[] fromBiggerToSmaller(int[] arr){
         for (int i = 0; i < arr.length; i++) {
-            for (int y = 0; y < arr.length; y++) {
-                if (arr[i] > arr[y]) {
-                    temp = arr[y];
-                    arr[y] = arr[i];
-                    arr[i] = temp;
+            int indexOfMax = i;
+            for (int y = i+1; y < arr.length; y++) {
+                if (arr[indexOfMax] < arr[y]) {
+                    indexOfMax = y;
                 }
             }
+            temp=arr[indexOfMax];
+            arr[indexOfMax]=arr[i];
+            arr[i]=temp;
         }
         return arr;
     }
