@@ -1,0 +1,8 @@
+String palindrome, boolean expRes
+Kayak, true
+Madam, true
+Live on time\,emit no evil, true
+Step on no pets, true
+hello, false
+aloha, false
+check if palindrome, false

@@ -1,7 +1,7 @@
 package com.annashabalina.runners.lesson7;
 
 import com.annashabalina.app.homework.lesson7.*;
-import com.annashabalina.app.homework.lesson9.ArrayPrint;
+import com.annashabalina.runners.lesson9.ArrayPrint;
 
 import java.util.Scanner;
 
@@ -53,7 +53,7 @@ public class LoopsArraysRunner {
                 break;
             case 4: From1To999.createAndPopulate();
                 break;
-            case 5: int[][] twoDimensionalArr = TwoDemensionalArrayOfRandomNums.createAndPopulate(10,99);
+            case 5: int[][] twoDimensionalArr = TwoDemensionalArrayOfRandomNums.createAndPopulate(10,99,8,5);
                 ArrayPrint.printTwoDimensionalArray(twoDimensionalArr);
                 break;
             case 6: ExtraTaskTwoDimensionalArray.createMatrix(1,999);

@@ -1,6 +1,5 @@
 package com.annashabalina.runners.lesson9;
 
-import com.annashabalina.app.homework.lesson9.ArrayPrint;
 import com.annashabalina.app.homework.lesson9.ArraySelectionSort;
 
 /**

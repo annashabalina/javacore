@@ -1,0 +1,6 @@
+int startIndex, int endIndex, int firstArrSize, int secondArrSize, int expRes
+1,85,8,5,0
+123,789,4,5,0
+-77,77,3,3,0
+1,9,7,3,0
+-1,99,4,4,0

@@ -1,9 +1,5 @@
 package com.annashabalina.app.homework.lesson7;
 
-import com.annashabalina.app.homework.lesson9.ArrayPrint;
-
-import java.util.Arrays;
-
 import static jdk.nashorn.internal.objects.NativeArray.push;
 
 /**

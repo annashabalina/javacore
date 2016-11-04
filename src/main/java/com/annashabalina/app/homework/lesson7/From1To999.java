@@ -1,6 +1,6 @@
 package com.annashabalina.app.homework.lesson7;
 
-import com.annashabalina.app.homework.lesson9.ArrayPrint;
+import com.annashabalina.runners.lesson9.ArrayPrint;
 
 /**
  * Created by Пользователь on 24.10.2016.
