@@ -1,0 +1,5 @@
+hello is not a palindrome
+kayak is a palindrome
+madam is a palindrome
+world is not a palindrome
+There are 2 in the input file
