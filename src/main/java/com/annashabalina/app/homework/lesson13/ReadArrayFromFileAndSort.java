@@ -15,8 +15,9 @@ public class ReadArrayFromFileAndSort {
     }*/
     public static void sortAndPrint(int sortDirection){
         try{
-            BufferedReader reader = new BufferedReader(new FileReader("D:\\projects\\javacore\\filesForLesson13\\taskA-readArrayFromFile.txt"));
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("D:\\projects\\javacore\\filesForLesson13\\taskA-sortedArrays.txt")));
+            String workingDir = System.getProperty("user.dir");
+            BufferedReader reader = new BufferedReader(new FileReader(workingDir+File.separator+"filesForLesson13"+File.separator+"taskA-readArrayFromFile.txt"));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(workingDir+File.separator+"filesForLesson13"+File.separator+"taskA-sortedArrays.txt")));
             String line;
 
             while((line=reader.readLine())!=null){

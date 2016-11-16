@@ -2,4 +2,5 @@ hello is not a palindrome
 kayak is a palindrome
 madam is a palindrome
 world is not a palindrome
-There are 2 in the input file
+moom is a palindrome
+There are 3 in the input file

@@ -10,8 +10,9 @@ import java.io.*;
 public class CheckForPalindromeFromFile {
     public static void palindromeCheck(){
         try{
-            BufferedReader reader = new BufferedReader(new FileReader("D:\\projects\\javacore\\filesForLesson13\\taskB-palindromesInput.txt"));
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("D:\\projects\\javacore\\filesForLesson13\\taskB-palindromesOutput.txt")));
+            String workingDir = System.getProperty("user.dir");
+            BufferedReader reader = new BufferedReader(new FileReader(workingDir+File.separator+"filesForLesson13"+File.separator+"taskB-palindromesInput.txt"));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(workingDir+File.separator+"filesForLesson13"+File.separator+"taskB-palindromesOutput.txt")));
             String line;
             int palindromeCounter=0;
 
