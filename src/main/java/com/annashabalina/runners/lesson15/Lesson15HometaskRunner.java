@@ -14,7 +14,7 @@ public class Lesson15HometaskRunner {
         Scanner s = new Scanner(System.in);
         String input = s.nextLine();
         if (input.length() == 0) {
-            System.out.println("Runner is closing. Goobye!");
+            System.out.println("Runner is closing. Goodbye!");
             System.exit(0);
         } else {
             try {

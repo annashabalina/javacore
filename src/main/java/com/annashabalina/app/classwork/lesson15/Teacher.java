@@ -21,4 +21,8 @@ public class Teacher extends Person {
     public void printOnTable(){
         System.out.println("Assume this is a table: "+response);
     }
+
+    public String lessonFinished(){
+        return "Don't forget the hometask";
+    }
 }
