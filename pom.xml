@@ -7,6 +7,14 @@
   <version>1.0-SNAPSHOT</version>
   <name>early.objects</name>
   <url>http://maven.apache.org</url>
+
+
+  <scm>
+    <connection>scm:svn:http://somerepository.com/svn_repo/trunkhttps://github.com/annashabalina/javacore/tree/pipeline</connection>
+    <developerConnection>scm:svn:https:https://github.com/annashabalina/javacore/tree/pipeline</developerConnection>
+    <url>https://github.com/annashabalina/javacore/tree/pipeline</url>
+  </scm>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
